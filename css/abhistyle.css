@@ -651,6 +651,9 @@ h3.my-profession
     color: var(--text-black-900);
     font-weight: 500;
 }
+.portfolio .row-1{
+    left: auto;
+}
 .portfolio .portfolio-item
 {
     flex: 0 0 33.33%;
