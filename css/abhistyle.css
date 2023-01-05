@@ -267,7 +267,7 @@ nav .menu-btn i {
     font-size: 22px;
     cursor: pointer;
     display: none;
-    bagc
+
 }
 
 /* ================menu btn ============ */
@@ -544,6 +544,7 @@ h3.my-profession {
     margin-bottom: 12px;
     color: var(--text-black-700);
 }
+
 .about .about-content .timeline .timeline-date .fa-brands,
 .about .about-content .timeline .timeline-date .fa {
     margin-right: 5px;
@@ -597,7 +598,8 @@ h3.my-profession {
     text-align: center;
     transform: all 0.3s ease;
 }
-.service .service-item .service-item-inner .icon .fa-brands ,
+
+.service .service-item .service-item-inner .icon .fa-brands,
 .service .service-item .service-item-inner .icon .fa {
     font-size: 40px;
     line-height: 60px;
@@ -823,44 +825,47 @@ h3.my-profession {
 @media (max-width:767px) {
     nav .menu-btn i {
         display: block;
-        right: 0px;
+        position: absolute;
+        right: 30px;
+        top: auto;
     }
 
-   
+
     #click:checked~.menu-btn i:before {
         content: "\f00d";
     }
-   
+
+    .nav-menu.active,
     #click:checked~ul {
-        left: 0;
+        left: 10px;
+    }
+
+    nav ul li a {
+        margin-top: 20px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
     }
 
     .aside .nav {
-        display: inline;
-        height: 100vh;
-        width: 100%;
-        top: 0;
-
+        background-color: var(--bg-black-100);
+        height: 90vh;
+        width: 90%;
+        top: 20px;
+        justify-content: center;
     }
 
+
+    .nav-menu,
     nav ul {
-        position: fixed;
+        position: absolute;
         left: -100%;
-        background-color: white;
-        display: flex;
-        text-align: center;
+        background-color: var(--bg-black-100);
+        flex-direction: column;
         transition: all 0.3s ease;
+        margin-bottom: 10px;
     }
-
-
-    nav ul li {
-        margin-top: 20px;
-        display: inline;
-    }
-
-   
-
-    
 
     .contact .contact-form .col-6,
     .contact .contact-info-item,
